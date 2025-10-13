@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit Patel | Software Engineer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 2rem;
+        }
+
+        header {
+    background: #2c3e50; 
+    color: #ffffff;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.6rem;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        
+        main {
+            padding: 2.5rem 0;
+        }
+
+        section {
+            background: #1e1e1e;
+            margin-bottom: 2rem;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid #2d2d2d;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+            color: #1abc9c;
+            border-bottom: 3px solid #2d2d2d;
+            padding-bottom: 0.7rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1abc9c;
+            color: #121212;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background: #24d4b1;
+            transform: translateY(-2px);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background-color: #282828;
+            padding: 1.8rem;
+            border-radius: 8px;
+            border-left: 6px solid #1abc9c;
+        }
+        
+        .skill-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            margin-bottom: 0.6rem;
+            font-weight: 400;
+            color: #b3b3b3;
+        }
+        
+        .education-entry {
+            margin-bottom: 1.8rem;
+        }
+
+        .degree {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .school-info {
+            font-style: italic;
+            color: #a0a0a0;
+            margin-bottom: 0.6rem;
+        }
+        
+        .strengths-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .strengths-list li {
+            background-color: #282828;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 6px solid #27ae60;
+        }
+        
+        .strengths-list strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        footer {
+    text-align: center;
+    padding: 2.5rem 0;
+    background: #2c3e50; 
+    color: #a0a0a0;
+    font-weight: 300;
+}
+        
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #1abc9c;
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+            header p {
+                font-size: 1.1rem;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+            section {
+                padding: 2rem;
+            }
+            .btn {
+                padding: 0.9rem 1.8rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Smit Patel</h1>
+            <p>Experienced Software Engineer | Full-Stack Development, Cloud & AI</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="about">
+            <h2>About Me 👨‍💻</h2>
+            <p>
+                Experienced Software Engineer with a solid understanding of full-stack development, cloud computing, and AI solutions. Passionate about designing scalable applications, leading engineering teams, and optimizing system performance. Adept at emerging technologies, automation, and best coding practices.
+            </p>
+        </section>
+
+        <section id="resume">
+            <h2>Resume / CV 📄</h2>
+            <p>You can view and download my full resume by clicking the button below.</p>
+            <a href="Smit_Patel_Resume.pdf.pdf" class="btn" download>Download My Resume</a>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills 💡</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Development</h3>
+                    <ul>
+                        <li>Java, Python, JavaScript, SQL</li>
+                        <li>Java Application Development</li>
+                        <li>Microservices & Scalable Architectures</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <ul>
+                        <li>Cloud Computing (AWS, Azure, GCP)</li>
+                        <li>DevOps & CI/CD Pipelines</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
+                    <ul>
+                        <li>AI & Machine Learning Applications</li>
+                        <li>Deep Learning & Neural Networks</li>
+                        <li>Fraud Detection Models</li>
+                    </ul>
+                </div>
+                 <div class="skill-category">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>AWS Certified Solutions Architect</li>
+                        <li>Google Professional Cloud Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="strengths">
+            <h2>Strengths 💪</h2>
+            <ul class="strengths-list">
+                <li>
+                    <strong>Effective Communication:</strong> I have good communication skills and can clearly articulate technical concepts to both technical and non-technical audiences.
+                </li>
+                <li>
+                    <strong>Problem-Solving:</strong> I excel at analyzing complex challenges and developing efficient, scalable, and robust software solutions.
+                </li>
+                <li>
+                    <strong>Team Collaboration:</strong> I am a strong team player who thrives in collaborative environments, contributing positively to team goals and project success.
+                </li>
+                <li>
+                    <strong>Adaptability & Quick Learning:</strong> I rapidly learn and master new technologies, frameworks, and programming languages to stay ahead in the fast-paced tech industry.
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education 🎓</h2>
+            <div class="education-entry">
+                <p class="degree">B.Tech, Computer Engineering</p>
+                <p class="school-info">Pandit Deendayal Energy University, Gandhinagar, India - Graduated 05/2015</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Smit Patel.</p>
+        <div class="social-links">
+            <a href="#" target="_blank">LinkedIn</a> |
+            <a href="#" target="_blank">Instagram</a> 
+        </div>
+    </footer>
+
+</body>
+</html>
