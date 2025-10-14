@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smit Patel | Software Engineer</title>
+    <title>Rohan Gupta | Software Engineer</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -28,11 +28,11 @@
         }
 
         header {
-    background: #2c3e50; 
-    color: #ffffff;
-    padding: 2.5rem 0;
-    text-align: center;
-}
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
 
         header h1 {
             font-size: 2.8rem;
@@ -63,6 +63,15 @@
             border-bottom: 3px solid #2d2d2d;
             padding-bottom: 0.7rem;
         }
+        
+        /* Subheading style for posts section */
+        #posts h3 {
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
 
         .btn {
             display: inline-block;
@@ -80,6 +89,43 @@
         .btn:hover {
             background: #24d4b1;
             transform: translateY(-2px);
+        }
+        
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .post-card {
+            background-color: #282828;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-card-platform {
+            font-weight: 600;
+            color: #1abc9c;
+            margin-bottom: 0.8rem;
+        }
+
+        .post-card p {
+            color: #b3b3b3;
+            flex-grow: 1;
+        }
+        
+        .post-card a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        .post-card a:hover {
+            text-decoration: underline;
         }
 
         .skills-grid {
@@ -146,12 +192,12 @@
         }
 
         footer {
-    text-align: center;
-    padding: 2.5rem 0;
-    background: #2c3e50; 
-    color: #a0a0a0;
-    font-weight: 300;
-}
+            text-align: center;
+            padding: 2.5rem 0;
+            background: #2c3e50;
+            color: #a0a0a0;
+            font-weight: 300;
+        }
         
         .social-links {
             margin-top: 1.5rem;
@@ -170,7 +216,7 @@
         }
 
         @media (max-width: 768px) {
-            .skills-grid {
+            .posts-grid, .skills-grid {
                 grid-template-columns: 1fr;
             }
             header h1 {
@@ -196,7 +242,7 @@
 
     <header>
         <div class="container">
-            <h1>Smit Patel</h1>
+            <h1>Rohan Gupta</h1>
             <p>Experienced Software Engineer | Full-Stack Development, Cloud & AI</p>
         </div>
     </header>
@@ -210,10 +256,65 @@
             </p>
         </section>
 
-        <section id="resume">
-            <h2>Resume / CV 📄</h2>
-            <p>You can view and download my full resume by clicking the button below.</p>
-            <a href="Smit_Patel_Resume.pdf.pdf" class="btn" download>Download My Resume</a>
+        <section id="posts">
+            <h2>Recent Activity & Posts 🌐</h2>
+            
+            <h3>On LinkedIn</h3>
+            <div class="posts-grid">
+                <div class="post-card">
+                    <span class="post-card-platform">LinkedIn Post</span>
+                    <p>The intersection of Generative AI and DevOps is set to redefine our development lifecycles. We're moving beyond simple automation...</p>
+                    <a href="https://www.linkedin.com/in/rohan-gupta-72448638a/" target="_blank">Read more on LinkedIn</a>
+                </div>
+                <div class="post-card">
+                    <span class="post-card-platform">LinkedIn Post</span>
+                    <p>A look back at one of the most challenging projects of my career: redesigning a real-time fraud detection system...</p>
+                    <a href="https://www.linkedin.com/in/rohan-gupta-72448638a/" target="_blank">Read more on LinkedIn</a>
+                </div>
+                <div class="post-card">
+                    <span class="post-card-platform">LinkedIn Post</span>
+                    <p>A fascinating read on the advancements in large-scale model training efficiency. I believe the real impact is how this democratizes access to powerful AI...</p>
+                    <a href="https://www.linkedin.com/in/rohan-gupta-72448638a/" target="_blank">Read more on LinkedIn</a>
+                </div>
+                <div class="post-card">
+                    <span class="post-card-platform">LinkedIn Post</span>
+                    <p>I vividly remember how challenging it was to navigate the tech industry. To pay it forward, I'm opening up my DMs for the next week...</p>
+                    <a href="https://www.linkedin.com/in/rohan-gupta-72448638a/" target="_blank">Read more on LinkedIn</a>
+                </div>
+            </div>
+
+            <h3>On Instagram 📸</h3>
+            <div class="posts-grid">
+                <div class="post-card">
+                    <span class="post-card-platform">Instagram Post</span>
+                    <p>From organized chaos on the whiteboard to a scalable microservices architecture. This is where the real engineering begins...</p>
+                    <a href="https://www.instagram.com/rohan.gupta.dev/" target="_blank">View on Instagram</a>
+                </div>
+                <div class="post-card">
+                    <span class="post-card-platform">Instagram Post</span>
+                    <p>Thrilled to share that I've officially passed the AWS Certified Solutions Architect exam! A challenging but incredibly rewarding journey...</p>
+                    <a href="https://www.instagram.com/rohan.gupta.dev/" target="_blank">View on Instagram</a>
+                </div>
+                <div class="post-card">
+                    <span class="post-card-platform">Instagram Post</span>
+                    <p>A look at the logic behind the new sentiment analysis model. The elegance of asynchronous programming in Python allows us to process...</p>
+                    <a href="https://www.instagram.com/rohan.gupta.dev/" target="_blank">View on Instagram</a>
+                </div>
+                <div class="post-card">
+                    <span class="post-card-platform">Instagram Post</span>
+                    <p>Let's break down a key trend in cloud computing: Serverless! It's a game-changer for building efficient and cost-effective applications...</p>
+                    <a href="https://www.instagram.com/rohan.gupta.dev/" target="_blank">View on Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="documents">
+            <h2>Documents 📄</h2>
+            <p>Here you can find my professional documents.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                <a href="resume.pdf.pdf" class="btn" download>Download Resume</a>
+                <a href="CurriculumVitae.pdf.pdf" class="btn" download>Download Full CV</a>
+            </div>
         </section>
 
         <section id="skills">
@@ -281,10 +382,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Smit Patel.</p>
+        <p>&copy; 2025 Rohan Gupta. All rights reserved.</p>
         <div class="social-links">
-            <a href="#" target="_blank">LinkedIn</a> |
-            <a href="#" target="_blank">Instagram</a> 
+            <a href="https://www.linkedin.com/in/rohan-gupta-72448638a/" target="_blank">LinkedIn</a> |
+            <a href="https://www.instagram.com/rohan.gupta.dev/" target="_blank">Instagram</a> 
         </div>
     </footer>
 
